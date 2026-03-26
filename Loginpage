@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Front Page GUI</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      margin: 0;
+    }
+
+    /* Header */
+    header {
+      background: #4a69bd;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Container */
+    .container {
+      width: 50%;
+      margin: 30px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    /* Form elements */
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    /* Inline elements */
+    .inline {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .submit {
+      background: #2ecc71;
+      color: white;
+    }
+
+    .reset {
+      background: #e74c3c;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #4a69bd;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>My Front Page</h1>
+  <p>Basic GUI Components Demo</p>
+</header>
+
+<div class="container">
+  <h2>User Form</h2>
+
+  <form>
+
+```
+<!-- Textbox -->
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name">
+
+<!-- Email -->
+<label>Email</label>
+<input type="email" placeholder="Enter your email">
+
+<!-- Password -->
+<label>Password</label>
+<input type="password">
+
+<!-- Number Box -->
+<label>Age</label>
+<input type="number" min="1" max="100">
+
+<!-- Dropdown -->
+<label>Country</label>
+<select>
+  <option>Select Country</option>
+  <option>India</option>
+  <option>USA</option>
+  <option>UK</option>
+</select>
+
+<!-- Radio Buttons -->
+<label>Gender</label>
+<div class="inline">
+  <label><input type="radio" name="gender"> Male</label>
+  <label><input type="radio" name="gender"> Female</label>
+</div>
+
+<!-- Checkbox -->
+<label>Hobbies</label>
+<div class="inline">
+  <label><input type="checkbox"> Reading</label>
+  <label><input type="checkbox"> Sports</label>
+  <label><input type="checkbox"> Music</label>
+</div>
+
+<!-- Date -->
+<label>Date of Birth</label>
+<input type="date">
+
+<!-- File Upload -->
+<label>Upload File</label>
+<input type="file">
+
+<!-- Textarea -->
+<label>Address</label>
+<textarea rows="4" placeholder="Enter your address"></textarea>
+
+<!-- Buttons -->
+<div class="buttons">
+  <button type="submit" class="submit">Submit</button>
+  <button type="reset" class="reset">Reset</button>
+</div>
+```
+
+  </form>
+</div>
+
+<footer>
+  © 2026 Basic GUI Page
+</footer>
+
+</body>
+</html>
